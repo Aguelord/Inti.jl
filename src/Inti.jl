@@ -1,5 +1,5 @@
 """
-    module Inti
+	module Inti
 
 Library for solving integral equations using Nyström methods.
 """
@@ -21,10 +21,10 @@ using Printf
 using TOML
 using Richardson
 
-import ElementaryPDESolutions
-import SpecialFunctions
-import Bessels # faster than SpecialFunctions for Bessel functions with real args
-import HAdaptiveIntegration
+using ElementaryPDESolutions: ElementaryPDESolutions
+using SpecialFunctions: SpecialFunctions
+using Bessels: Bessels # faster than SpecialFunctions for Bessel functions with real args
+using HAdaptiveIntegration: HAdaptiveIntegration
 
 # helper functions
 include("utils.jl")
@@ -56,8 +56,5 @@ include("gmsh_api.jl")
 
 # API
 include("api.jl")
-
-# GuiggianiRichardsonDuffy submodule
-include("guiggiani/src/GuiggianiRichardsonDuffy.jl")
 
 end
