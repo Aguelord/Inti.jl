@@ -57,4 +57,7 @@ include("gmsh_api.jl")
 # API
 include("api.jl")
 
+# GuiggianiRichardsonDuffy submodule
+include("guiggiani/src/GuiggianiRichardsonDuffy.jl")
+
 end
